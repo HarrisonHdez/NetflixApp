@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@700 & display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +12,19 @@ body {
     color: #ff0000;
     font-size: 36px;
     border-radius: 50% 75%;
+    font-family: 'Roboto', sans-serif;
+
 }
-
-
+.logo-loader {
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px; 
+}
+@media screen and (min-width: 768px) { 
+    .logo-loader {
+        font-size: 100px; 
+    }
+}
 .home-banner{
     background-image: linear-gradient(#000000b0, #000000a6), url('../assets/Netflix.jpg');
     background-size: cover;
@@ -35,6 +46,10 @@ body {
 .home-logo{
     height: 3em;
 }
+.home-logo-loader {
+    width: 220px;
+}
+
 .home-login-button{
     background: red;
     border: none;
