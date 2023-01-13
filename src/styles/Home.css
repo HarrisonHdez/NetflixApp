@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    font-family:  Arial;
+}
+
+.home-banner{
+    background-image: linear-gradient(#000000b0, #000000a6), url('../assets/Netflix.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.home-topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.home-logo{
+    height: 3em;
+}
+.home-login-button{
+    background: red;
+    border: none;
+    padding: 15px 10px;
+    color: white;
+    font-size: 14px;
+    border-radius: 2px;
+    
+}
+.home-login-modal{
+    background: white;
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+    
+
+.home-title{
+    color: white;
+    font-size: 22px;
+    width: 270px;
+    text-align: center;
+}
+.home-subtitle{
+    color: white;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    width: 264px;
+}
+.home-start-button{
+    background-color: red;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 2px;
+}
+.home-start-button:hover {
+    background-color: rgb(255, 47, 47);
+}
+.home-arrow{
+    margin-top: 1em;
+    font-size: 2em;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.section-tv {
+    width: 700px;
+    height: 700px;
+}
+.tv-title {
+    color: white;
+    font-size: 50px;
+}
+.tv-subtitle {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.loader-logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+h4 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+@media screen and (min-width: 390px) { 
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .home-title{
+        color: white;
+        font-size: 32px;
+        width: 376px;
+        text-align: center;
+    }
+    .home-subtitle{
+        color: white;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 22px;
+        width: 330px;
+    }
+    .home-start-button{
+        background-color: red;
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        margin-top: 30px;
+        font-size: 30px;
+        border-radius: 2px;
+    }
+    .home-start-button:hover {
+        background-color: rgb(255, 47, 47);
+    }
+    .home-login-button{
+        background: red;
+        border: none;
+        padding: 15px 20px;
+        color: white;
+        font-size: 14px;
+        border-radius: 2px;
+        
+    }
+}
+
+@media (min-width: 576px) {
+    .home-title {
+        color: white;
+        font-size: 42px;
+        width: 482px;
+        text-align: center;
+    }
+    .home-subtitle {
+        color: white;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 22px;
+        width: 490px;
+    }
+    .home-login-button {
+        background: red;
+        border: none;
+        padding: 10px 13px;
+        color: white;
+        font-size: 20px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .home-title{
+        color: white;
+        font-size: 60px;
+        width: 750px;
+        text-align: center;
+    }
+    .home-subtitle{
+        color: white;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 30px;
+        width: 660px;
+    }
+    .home-start-button{
+        background-color: red;
+        color: white;
+        padding: 15px 40px;
+        border: none;
+        margin-top: 30px;
+        font-size: 30px;
+        border-radius: 2px;
+    }
+    .home-start-button:hover {
+        background-color: rgb(255, 47, 47);
+    }
+}
