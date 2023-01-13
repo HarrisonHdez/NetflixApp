@@ -20,7 +20,7 @@ export const HomeApp = () => {
       <>
         <div className="home-banner">
             <div className="home-topbar">
-                <img src="Logo-Netflix.png" alt="Logo" className="home-logo" />
+                <img src="/src/assets/Logo.jpg" alt="Logo" className="home-logo" />
                 <button
                     className="home-login-button"
                     onClick={() => setShowLogin(!showLogin)}
