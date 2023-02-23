@@ -1,10 +1,9 @@
 import React from 'react'
-
+import logo from '../assets/logo.svg'
 export const Loader = () => {
     return (
         <div className="loading">
-             <img src="src/assets/loader.png" alt="Logo" className="home-logo-loader" />
-            {/* <h2 className="logo-loader">NETFLIX</h2> */}
+             <img src={logo} alt="Logo" className="home-logo-loader "/>
         </div>
     );
 }

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Loader } from './Loader';
+import logo from '../assets/logo.svg'
 
-
-export const HomeApp = () => {
+export const HomeNetflix = () => {
   const [loading, setLoading] = useState(true);
   const [showLogin, setShowLogin] = useState(false);
 
@@ -17,11 +17,9 @@ export const HomeApp = () => {
   }
 
   return (
-      <>
         <div className="home-banner">
             <div className="home-topbar">
-                <img src="src/assets/logo-netflix.png" alt="Logo" className="home-logo" />
-                {/* <h2 className="logo">NETFLIX</h2> */}
+                <img src={logo} alt="Logo" className="home-logo"/>
                 <button
                     className="home-login-button"
                     onClick={() => setShowLogin(!showLogin)}
@@ -42,107 +40,9 @@ export const HomeApp = () => {
                     Disfruta donde quieras. Cancela cuando quieras.
                 </h2>
                 <button className="home-start-button" >Comenzar</button>
-                {/* <div className="home-arrow">
-                    <i className="fas fa-arrow-right"></i>
-                </div> */}
+                
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-        <div>
-          <h4>Hola</h4>
-        </div>
-      </>
+       
   );
 } 

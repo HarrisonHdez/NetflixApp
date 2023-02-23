@@ -8,6 +8,12 @@ body {
     background-color: rgb(0, 0, 0);
     font-family:  Arial;
 }
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 .logo {
     color: #ff0000;
     font-size: 36px;
@@ -30,7 +36,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 }
 .home-topbar{
@@ -110,52 +116,6 @@ body {
     font-size: 2em;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-.section-tv {
-    width: 700px;
-    height: 700px;
-}
-.tv-title {
-    color: white;
-    font-size: 50px;
-}
-.tv-subtitle {
-    color: white;
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-.loading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0);
-}
-
-.loader-logo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-}
-h4 {
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
 @media screen and (min-width: 390px) { 
     .home-content{
         display: flex;
@@ -224,7 +184,10 @@ h4 {
     }
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
+    .home-banner{
+        height: 100vh;
+    }
     .home-content{
         display: flex;
         flex-direction: column;
@@ -257,4 +220,43 @@ h4 {
     .home-start-button:hover {
         background-color: rgb(255, 47, 47);
     }
+}
+
+
+.section-tv {
+    width: 700px;
+    height: 700px;
+}
+.tv-title {
+    color: white;
+    font-size: 50px;
+}
+.tv-subtitle {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.loader-logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+h4 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
